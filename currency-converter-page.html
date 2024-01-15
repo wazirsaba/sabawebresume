@@ -1,0 +1,65 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/css/style.css">
+    <link rel="stylesheet" href="stylesheet/css/navbar.css">
+    <link rel="stylesheet" href="stylesheet/css/footer.css">
+    <link rel="stylesheet" href="stylesheet/css/currencyConverter.css">
+    <link rel="stylesheet" href="stylesheet/css/professional.css">
+
+    <title>Currency Converter Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="stylesheet/images/website-logo.png" alt="Saba Wazir"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="academic.html">Academic History</a></li>
+                <li><a href="professional.html">Professional History</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">&#9776; Menu</div>
+    </header>
+    <h1 class="centered-h1">Currency Converter</h1>
+
+
+    <main>
+              <!-- Centered Image -->
+              <div class="centered-image-container">
+                <img src="stylesheet/images/currency-conerter.png" alt="Centered Image">
+            </div>
+        <label for="sourceCurrency">Source Currency:</label>
+        <select id="sourceCurrency"></select>
+    
+        <label for="targetCurrency">Target Currency:</label>
+        <select id="targetCurrency"></select>
+    
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+    
+        <button onclick="convertCurrency()">Convert</button>
+    
+        <p id="result"></p>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Saba | sabawazirali@gmail.com | <a href=" Saba | sabawazirali@gmail.com | https://www.linkedin.com/in/saba-wazir-996793299">linkedin</a></p>
+        </div>
+    </footer>
+
+    <script src="stylesheet/script/navbar.js"></script>
+    <script src="stylesheet/script/currency-converter.js"></script>
+</body>
+</html>

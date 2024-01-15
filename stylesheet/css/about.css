@@ -1,0 +1,51 @@
+h1 {
+    color: #000000;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+h2 {
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+p {
+    color: #000000;
+    margin-bottom: 20px;
+    margin-left: 6vw;
+    margin-right: 1vw;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+
+ol li {
+    margin-bottom: 8px;
+    margin-left: 2vw;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    margin-left: 40%;
+    border-radius: 8px;
+    margin-top: 20px;
+}

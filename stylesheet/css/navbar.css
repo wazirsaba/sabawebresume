@@ -1,0 +1,63 @@
+/* Burger Menu Styles */
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #ffffff;
+    font-size: larger;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.logo img {
+    width: 80px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 1200px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        font-size: larger;
+        /* xolo */
+        background-color: black;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-right: 3vw;
+        font-size: 3vw;
+    }
+}

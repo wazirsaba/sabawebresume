@@ -1,0 +1,29 @@
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 1px;
+}
+
+th, td {
+    border: 1px solid #3498db; /* Blue border */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db; /* Blue background */
+    color: #fff; /* White text */
+}
+
+ul li {
+    margin: 12px;
+    color: #3498db; /* Blue text */
+}
+
+.education-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3498db; /* Blue border */
+}

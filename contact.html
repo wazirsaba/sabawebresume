@@ -1,0 +1,65 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/css/style.css">
+    <link rel="stylesheet" href="stylesheet/css/footer.css">
+    <link rel="stylesheet" href="stylesheet/css/contactCSS.css">
+    <link rel="stylesheet" href="stylesheet/css/navbar.css">
+    <link rel="stylesheet" href="stylesheet/css/professional.css">
+
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="stylesheet/images/website-logo.png" alt="Saba Wazir"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="academic.html">Academic History</a></li>
+                <li><a href="professional.html">Professional History</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">&#9776; Menu</div>
+    </header>
+
+    <form id="contactForm">
+        <img src="stylesheet/images/contact-image.jpg" alt="Contact Image" class="contact-image">
+        
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="projectDetails">Tell us about your project:</label>
+        <textarea id="projectDetails" name="projectDetails" rows="4" required></textarea>
+    
+        <label for="budget">Budget for the Project:</label>
+        <input type="text" id="budget" name="budget">
+    
+        <label for="deadline">Project Deadline:</label>
+        <input type="text" id="deadline" name="deadline">
+    
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+
+
+    <footer>
+       <div class="footer-content">
+           <p>Saba | sabawazirali@gmail.com | <a href=" Saba | sabawazirali@gmail.com | https://www.linkedin.com/in/saba-wazir-996793299">linkedin</a></p>
+       </div>
+   </footer>
+
+    <script src="stylesheet/script/navbar.js"></script>
+</body>
+</html>

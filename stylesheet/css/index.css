@@ -1,0 +1,91 @@
+/* Common styles for both desktop and mobile */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px; /* Reduced padding */
+}
+
+.hero-section {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Adjusted padding */
+    margin-bottom: 10px; /* Added margin bottom */
+}
+
+.centered-h1 {
+    margin: 0;
+}
+
+.main-content {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px; /* Reduced margin-top */
+    padding: 20px 0; /* Adjusted padding */
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Stretch items to equal height */
+}
+
+.left-column img,
+.right-column img {
+    width: 100%; /* Adjusted image width */
+    border-radius: 8px;
+}
+
+.left-column, .right-column {
+    flex-basis: calc(50% - 10px); /* Adjusted flex-basis to allow for spacing */
+    margin-bottom: 10px; /* Slightly reduced margin between columns */
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 5px; /* Reduced margin below headings */
+}
+
+p, ol {
+    color: #333;
+    margin-bottom: 5px; /* Reduced margin below paragraphs and lists */
+}
+
+ol {
+    padding-left: 15px; /* Slightly reduced padding-left for lists */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px; /* Slightly reduced margin between list items */
+}
+
+/* Buttons styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px; /* Reduced padding for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 767px) {
+    .two-column {
+        flex-direction: column; /* Change to one column on small screens */
+    }
+
+    .left-column, .right-column {
+        flex-basis: 100%; /* Take up full width on small screens */
+        margin-bottom: 10px; /* Slightly reduced margin between columns */
+    }
+}

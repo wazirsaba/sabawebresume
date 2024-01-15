@@ -1,0 +1,116 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="stylesheet/css/style.css">
+    <link rel="stylesheet" href="stylesheet/css/navbar.css">
+    <link rel="stylesheet" href="stylesheet/css/footer.css">
+    <link rel="stylesheet" href="stylesheet/css/forecasterStyle.css"> 
+    <link rel="stylesheet" href="stylesheet/css/professional.css">
+
+    <title>Forecaster Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="stylesheet/images/website-logo.png" alt="Saba Wazir"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="academic.html">Academic History</a></li>
+                <li><a href="professional.html">Professional History</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">&#9776; Menu</div>
+    </header>
+  
+    <h1 class="centered-h1">Forecaster</h1>
+    <div class="container">
+        <div class="column">
+            <h2>Fuel Forecaster</h2>
+            <label for="historicalMode" style="color: black;">Historical Mode:</label>
+            <input type="checkbox" id="historicalMode">
+            
+            <!-- Mode switch button -->
+            <form id="fuelForm">
+                <label for="fuelType">Fuel Type:</label>
+                <select id="fuelType" name="fuelType">
+                    <option value="solidFuels">Solid Fuels</option>
+                    <option value="gas">Gas</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="liquidFuels">Liquid Fuels</option>
+                </select>
+            
+                <label for="month">Select Month:</label>
+                <select id="month" name="month" required>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            
+                <label for="year">Enter Year:</label>
+                <input type="number" id="year" name="year" required>
+            
+                <label for="fuelAmount">Enter Fuel Amount:</label>
+                <input type="number" id="fuelAmount" name="fuelAmount" required>
+            
+                <button type="button" onclick="updateChart()">Get Forecast</button>
+            </form>
+            
+        
+        </div>
+    
+        <!-- Additional column for forecast results -->
+        <div class="column">
+   
+            <div id="forecastResult">
+                <h2>Expected Forecast</h2>
+                <p id="forecastOutput"></p>
+                            <!-- Mode display -->
+            <div id="modeDisplay"></div>
+            <!-- Add canvas here -->
+            <div id="chartContainer" class="chart-container">
+             <canvas id="fuelChart"></canvas>
+                    </div>
+            <!-- Scroll buttons -->
+            <button id="scrollForward">Scroll Forward</button>
+            <button id="scrollBackward">Scroll Backward</button>
+                        </div>
+    
+        </div>
+    </div>
+    
+    
+    
+    
+        
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p>Saba | sabawazirali@gmail.com | <a href=" Saba | sabawazirali@gmail.com | https://www.linkedin.com/in/saba-wazir-996793299">linkedin</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="stylesheet/script/forecaster.js"></script>
+    <script src="stylesheet/script/navbar.js"></script>
+</body>
+</html>
